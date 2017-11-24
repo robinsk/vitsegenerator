@@ -1,0 +1,932 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0022)http://scrap/yeah.html -->
+<HTML><HEAD>
+<META content="text/html; charset=utf-8" http-equiv=content-type>
+<META name=GENERATOR content="MSHTML 9.00.8112.16526"></HEAD>
+<BODY>
+<SCRIPT language=JavaScript><!-- 
+
+
+function RandomElement(myarray)
+{
+    return myarray[Math.round(Math.random()*(myarray.length-1))];
+}
+
+function RandomCmp(a, b)
+{
+    var n = Math.round(Math.random()*2);
+    if (n == 0)
+    {
+        return -1;
+    }
+    else if (n == 1)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+function Randomize(myarray)
+{
+    myarray.sort(RandomCmp);
+}
+
+function rndnumber(max){
+  var randscript = -1
+  while (randscript < 1 || randscript > max || isNaN(randscript)){
+     randscript = parseInt(Math.random()*(max+1))
+  }
+  return randscript
+}
+
+
+// Opening...
+var a = new Array(
+    "Det va mens",
+    "Det her va, om æ minnest rætt, mens",
+    "Sku tru om det ikkje va på den tia da",
+    "Det her heindt omtrent på den tia da",
+    "Det her hendt på en tia da",
+    "Tar æ ikkje mye feil heindt det hær mens ",
+    "Det hær e ein sainn historie fra den tia da",
+    "Det må ha være mens",
+    "Jau, det va seinvinters, og om æ ikkje erinder feil så va det da",
+    "Det her va mens",
+    "Det her va før Bacainos va på topp i Norge, mens",
+	"Det her va før han Lamo fløtta te junatien, mens",
+    "Det her heindt mens",
+    "Det va på den tia da",
+    "Det her va før bruførrbindelsen tell Senja, mens",
+    "Det her va i mellakrigstia mens",
+    "Ska vi sjå, æ tru det må ha vøre da",
+    "Det her e ein historie fra den tia da",
+    "Den her historien utspæll sæ på den tia da",
+    "Den her historien utspæll sæ på den tia da han Jabba laga demo med masse sprites, mens",
+    "Di sei det va mens",
+    "Det her va i gammeldaga mens",
+    "Det her hendt på den tida da",
+    "Jau, ska tru om ikkje det hær heindt på den tida da",
+	"Det her va før Rebellen pakka mainnskjiten sin og dro te Bergen",
+	"Det her va før natta han Robba dro ut ledninga på kebabvogna i Harstad",
+    "Det her va på den tida");
+
+
+//Karakteristikker av person
+var karakteristikka = new Array(
+    "Tjukk",
+    "Blind",
+    "Høn",
+    "Stor",
+    "Jærn",
+    "Litj",
+    "Svemmel",
+    "Gammel",
+    "Tøffe",
+    "Glad",
+    "Artig",
+    "Gærn",
+    "Propell",
+    "Svett",
+    "Grom",
+    "Væn",
+    "Kuk",
+    "Bajs",
+    "Padde",
+    "Mugg",
+    "Nub",
+    "Gaul",
+    "Rån",
+    "Baillhæst",
+	"Knøvvel",
+    "Sur",
+	"Grandmaster",
+	"Fett",
+	"Ninja",
+	"Danske",
+	"Spællar",
+	"Tyskert",
+	"Alta",
+	"Lamo"
+);
+
+Randomize(karakteristikka);
+
+// Karakter i historie...
+var b = new Array(
+    "han " + karakteristikka.pop() +  "-Kvalme",
+    "han " + karakteristikka.pop() +  "-Keyjay",
+    "han " + karakteristikka.pop() +  "-Ebbe",
+    "han " + karakteristikka.pop() +  "-Jabba",
+    "han " + karakteristikka.pop() +  "-Vidd",
+    "han " + karakteristikka.pop() +  "-Tobba",
+    "han " + karakteristikka.pop() +  "-Jon Cato",
+    "han " + karakteristikka.pop() +  "-Franke",
+    "han " + karakteristikka.pop() +  "-Tosje",
+    "han " + karakteristikka.pop() +  "-Robba",
+    "han " + karakteristikka.pop() +  "-Knut",
+	"han " + karakteristikka.pop() +  "-Ogre",
+	"han " + karakteristikka.pop() +  "-Uffe",
+    "han Rune Rebell",
+    "han Arnfinn",
+	"han Biboy",
+	"han Lamo",
+	"han Cambridge-Ebbe",
+    "han " + karakteristikka.pop() +  "-Rebell",
+    "han " + karakteristikka.pop() +  "-Lars",
+    "han skalla på Gunnar Nilsen"
+    );
+
+
+// Noe en karakter i historia gjør
+var c = new Array(
+    "vekariert førr organisten",
+	"spælla Rolemaster nedi kjellarn",
+	"laga karaktera tell Cthulhu",
+	"mekka demo tell kopifæsten",
+    "vart kjæppjaga tell Ibestad ætter å ha sætt fyr på feskmottake",
+    "agert storkar",
+    "gjømt sæ førr norsklærarn",
+    "dreiv å aksjonert mot vasskraftutbygginga",
+    "skreiv assemblykode tell Dataland",
+    "sorterte diskætta på Facta System",
+    "spælla Game of Shava",
+    "surra rundt på Gunnar Nilsen",
+    "spælla Stunt Car hos danskan",
+	"bytta piratkopierte diskætta på Dataland",
+    "fant opp hjulet på nytt",
+    "førrbereda sæ te hyttetur",
+    "kjefta på dørvakta på Tilt",
+	"plagdes med installering av Windows",
+	"plagdes med lasting av Fort Apocalypse fra diskætten",
+	"lasta ned skitfilma fra Netflix",
+	"feira nyttårsaften",
+	"fjerta ned sofaputan i Brurvikveien",
+	"steika vafla nerri kjellarn i Burvikveien",
+	"hadd lånt alle Apestreker filman i byen",
+	"gjømte godteposen førr han Robin"
+    );
+
+
+//Sted karakteren gjør noe
+var d = new Array(
+    "på Senja",
+    "i Finneid",
+    "på Myre",
+    "i Vesteråln",
+    "i Svolvær",
+    "i Hænningsvær",
+    "i Finneidfjord",
+    "i Reine",
+    "i Mælfjorbotn",
+    "i Kvæfjorn",
+    "i Helligvær",
+    "i Nyksunde",
+    "i Finnsnes",
+    "på Røst",
+    "i Nord-Sjona",
+    "i Lødingen",
+    "i Sallangen",
+    "i Bindalseide",
+    "i Mefjordvær",
+    "i Stamsund",
+    "nordpå",
+    "søraførr",
+    "i Harstad",
+	"i Brurvikveien"
+    );
+
+// Beskrivelse av scene
+var e = new Array(
+    "Gammelkara satt i",
+    "Det va fæst i Brurvikveien, og ungkara lå i" ,
+    "Det hadd vært videomaraton, og guttan satt i",
+	"Det hadd vært rebusløp på Stanges, og ungkaran lå i",
+    "Det va permitteringe i IT-bransjen, så mæstparten av mainnfolkan satt i",
+	"Det hadd vært svartmetall-konsert i Bergen, og guttan satt i",
+    "Rolemaster-gruppa låg i",
+	"Rolemaster-gruppa va samla tell dassoppdrag hos han Knut, og karakteran satt i",
+    "Dungeons-gruppa låg værfast i",
+    "Heile stangnesgjengen va i",
+	"Det var filminnspelling i kjellarn, så mainfolkan satt i",
+	"Det var permitteringe på Candy, så mæstparten av mainfolkan satt i",
+	"Skoglund-familien hadd nettopp kommen heim frå slæktsstevne, og satt andpusten i",
+	"Danskan hadd nettopp kommen heim fra verdensturne, og svetta i",
+    "Et uvær av en ainna værden herja Brurvika, så guttan satt i",
+    "Mainnfolkan på Stangnes låg avdrøkken i",
+    "Johansen-familien hadd nættopp komen heim frå ostehuset Castello, og satt andpusten i",
+    "Nyttårsaften-krisa te utelivet i Harstad va på det heitaste, så gjengen satt i",
+    "Det va oppholdsver så ainnakvær Harstadværing satt i",
+    "Det va juss etter grisefæsten på Kilhus, så mainnfolka låg i",
+    "Godpølsa med brød va just kommen te kiosken i Gågata, så karan satt hænslængt i",
+    "Lønnsutbetalinga va førrsinka så mainnfolkan satt tetakslaust i",
+    "Lutfeskkomiteen satt pænglaus i",
+	"Det hadd kommen piratspæll på diskætta i posten, så gutan satt i",
+    "Folk va samla te xpilot-turnering i",
+    "Det va tirsdag og spællkvess på Tilt, så mainnfolkan satt i",
+    "Stangesgjengen va utkommandert av PB tel å kleppe ned persiennan, så mainnfolkan satt tetakslaus i",
+    "Folk satt å gledd sæ tell hurtigruta sku ankomme i"
+    );
+
+//Sted scenen utspiller seg
+var f = new Array(
+    "naustet",
+    "fjæra",
+    "sjykainten",
+    "førrsamlingshuse",
+    "kjerka",
+    "saufjøse",
+    "kommunehuse",
+    "præstfjæra",
+    "styrhuse",
+    "heimhusan",
+    "menighetshuse",
+    "sjarken",
+    "snyskavlan",
+    "ongdomshuse",
+    "utbygge på moloen",
+    "redningsskøyta",
+    "posthuskjellern",
+    "moltmyra",
+    "venteromme på færgekaia",
+    "kaffeterian",
+    "veikainten",
+    "hotællhagen",
+	"kjellarn",
+	"knaggbarn",
+	"Kaffistova",
+	"Gunnar Nilsen"
+	);
+
+// Hva skjer i scenen
+var g = new Array(
+    "prekivert",
+    "åt",
+    "glæfsa i sæ",
+    "gomla",
+    "rænska",
+    "skar",
+    "beit",
+    "fallbydd",
+    "skrapa",
+    "tørka",
+    "flækka",
+    "sugd",
+    "la i blaut",
+    "ægna",
+    "gnægd",
+    "maula",
+    "gjor te",
+    "handtert",
+    "pella",
+    "hadd sæ me",
+    "salta",
+    "fillitert",
+    "grilla",
+    "saumfart",
+    "længta ætter",
+    "stella te");
+
+// Hva spises i scenen
+var h = new Array(
+    "guano",
+    "mandelpotet",
+    "gryterett",
+    "kålhau",
+    "kamferdrops",
+    "kålrabbi",
+    "gammelsau",
+    "grandiosa",
+    "tapas",
+    "risgraut",
+    "brødskiv",
+    "lapskaus",
+	"Norvegia",
+    "kylling",
+    "tapas",
+    "appelsinskrej",
+    "gryterett",
+    "gomorrajoggert",
+    "mais",
+    "flensost",
+	"surstrømming",
+	"chili con carne",
+	"heimert",
+	"fjordlandmeddag"
+    );
+
+// Mer beskrivelse av hva som skjer i scenen
+var i = new Array(
+    "Praten gjekk levlig,",
+    "Stemninga va laber,",
+    "Det va ei dyster stæmning,",
+    "Det vart snakka om laust og fast,",
+    "Det vart snakka om det elendige rollespællværet,",
+    "Det vart snakka om oppgavan på norsktentamen,",
+    "Praten gjekk levlig,",
+    "Det vart snakka om vær og vind,",
+    "Det vart snakka om den dårlige konsoll-lanseringa,",
+    "Det va ei dyster stæmning,",
+    "Praten gjekk om framtia tell Xbone,",
+    "Stæmninga va netrøkt,",
+    "Stæmninga va resignert,",
+    "Han Jon Cato og han Robin preika om Mac'ens fortreffeligheta",
+    "Brusen lå djup-frossen i kjølarn",
+    "Han Espen henta en pose koteletta fra frysarn te tining,",
+    "Han Knut og Rebellen satt å småflirte over Ex.Phil. studentan,",
+	"Han Jon Cato og han Frank krangla om XP,",
+    "Det vart snakka om fremtida tell 3. etasjen på Gammelbrygga,",
+	"Han Espen og han Robin diskuterte fræmtida tell matbutikkan i Harstad,",
+	"Det vart snakka om de siste rundan med Ratzeputze på Tilt,"
+    );
+
+// Stemning
+var j = new Array(
+    "og mangt eit sannheitens ord ble sagt.",
+    "og det va ikkje fritt førr at eit og ainna ukvæmsord blei uttalt.",
+    "og skråtobakk vart spøtta væggimellom.",
+    "og bainnskapen hagla.",
+    "og eit og ainna ukvæmsord veksla eier.",
+    "og mang ein beskyldning om unnaluring blei framsatt.",
+    "og mangt ei ugudelig ord blei spøtta ut.",
+    "og det va ikkje fritt førr at eit og ainna ukvæmsord blei uttalt.",
+    "og det va ikkje fritt førr at eit og ainna haulaust ord vart uttalt.",
+    "og mang ein beskyldning om latskap og udugeligheit blei framsatt.",
+    "og det vart resta oppgjett på mangt eit hau.",
+    "og mang ein næve vart høtta i førrakt mot handlingslammelsen tell politikeran sørpå.",
+    "og det vart bainna over det helvetes filmutvalget på Netflix.",
+	"og mang en næve vart høtta mot dørvaktan i Oslo.",
+	"og det va ikkje fritt førr at eit og ainna haulaust ord vart uttalt om utvalget av IPA på Rema."
+    );
+
+// Brå hendelse
+var k = new Array(
+    "gjekk aggregate i lufta",
+    "slo han inn me et frøkteli rabalder",
+    "hørtes et dævelsk smell",
+    "gjekk han laus me et frøkteli rabalder",
+    "hørtes en frøkteli språkbruk",
+    "smallt det i golvplankan",
+    "smallt det i persienneran",
+    "va det nån som kauka høgt",
+    "renga telefonen te han PB",
+    "kræsja xboxen",
+    "kvapp det i vannkjølern",
+    "gaula det i fløyta tell hurtigruta"
+    );
+
+// Karakter som kommer inn
+var l = new Array(
+    "en boksællar",
+    "ei spellernaken ungtaus fra kunstskola i Kabelvåg",
+	"en daudrukken mellomledar fra Scotsman",
+    "gammalordførarn",
+    "en gjæng me bobilturista",
+    "ei oppstasa byfrøken",
+    "vaktmestern",
+    "en tellfløtta Harstaværing",
+    "en oppstaila væstkanttulling",
+    "en oppkava sleppskaill",
+    "en blåruss fra Stangnes",
+    "ei ansiktspen pia fra Heggen",
+    "en andpusten lærar",
+    "ei ung-pia fra Lødingen",
+    "en ungdomspolitiker fra FrP",
+	"ei overarbeida bardame fra Tilt"
+    );
+
+// Hva gjør den nye karakteren
+var m = new Array(
+    "kom til syne bak naustvæggen i Brurvika.",
+    "kom hoppanes ned fra nausttake.",
+    "ramla ned loftstrappa.",
+    "stakk haue opp av fruktbøtta",
+    "ramla avdrøkken ned trappa med han Karo",
+    "kom traskanes gjønnablaut ut av dritarn",
+    "skvatt opp gjønna kjellergluggen",
+    "kom dræganes med en Macintosh uten harddisk",
+    "starta IT Megademo på mobilen",
+    "kom sprenganes ut av frysarn",
+    "undocka laptopen",
+    "kom bedugga inn bakdøra",
+    "kom klyvandes inn vinduet",
+	"starta opp Last Ninja på commdoren"
+    );
+
+// Utrop
+var n = new Array(
+    "Ka farsken",
+    "Ka i svarte",
+    "å du dævle",
+    "Han steike",
+    "Dæven han eiti",
+    "Han steike ta",
+    "Hærre jessu",
+    "Milde araber",
+    "Dæven døtte",
+    "Dæsken ta",
+    "Kor i nasen",
+    "Tykje ta",
+    "Milde major",
+    "Barracuda",
+	"Kakk maddafakka",
+	"Milde major",
+	"Svarte maria",
+	"Kor dudddle",
+	"Spill meg players",
+	"Blodet skal flyte");
+
+// Utrop #2
+var o = new Array(
+    "æ estimere at haupin-tabelættan får avsætning no!",
+    "no drei han søraust!",
+    "det e my rart å før inn i fangstdagboka om dagan!",
+    "og æ som ikkje har nyskjorta på!",
+    "det vart ei underli tid!",
+    "det e ikkje alle som lev av sjyen!",
+    "gjøm rægnskapan!",
+    "det vart ei ny tid, ja!",
+    "det e ikkje nå mellateng!",
+    "no e han tykje laus!",
+    "det va no også nå te undeholdning!",
+    "det e no mye som mangla vassgrauten!",
+    "det vart bibelske tilstanda ja!",
+    "det her vakje avmærka i almanakken!",
+    "sånt leven har det ikkje vøre sian posthuse vart reven!",
+    "no e fellesferien begynt!",
+    "æ har no mi tru!",
+    "no kjæm han rangveien!",
+    "det e ikkje artigkara det mankere på!",
+    "no blir det nok å gjøre på næste mission!",
+    "æ tror den dungeons-karaktern må lages på nytt!",
+    "majs gir konstigt bajs!"
+    );
+
+// Stemningsbeskrivelse
+var p = new Array(
+    "Det vart stilt i førrsamlinga.",
+    "Det vart dryp stille.",
+    "Det vart yderst stille.",
+    "Det vart bråstopp i konværsasjonen.",
+    "Det vart tyst som i kjerkgrava.",
+    "Det vart stilt som et valgmøte i boligbyggarlage.",
+    "Det vart ubehaglig stilt i førrsamlinga.",
+    "Det vart stille som i grava.",
+    "Det vart pinlig stille.",
+    "Kjæftbruken stillna, og mainnfolkan klødd sæ førrlegen i boksræva.");
+
+// Innledning punchline
+var q = new Array(
+    "Da kom det sælvfølgelig fra",
+    "Da kom det fra",
+    "Da kvakk det i",
+    "Da kom det knusktørt fra",
+    "Da kom det et harskt kræmt fra",
+    "Da for det i",
+    "Da rauk det ein smådævel i",
+    "Da peip det i");
+
+// karakteristikk av personen som leverer punchline
+var s = new Array(
+    "som ikkje akkurat hadd søtte å spøtta i glassan;",
+    "som ikke brukt å snakk i småbokstava;",
+    "som ikkje brukt å spar på kommentaran;",
+    "som ikkje brukt å spar møkre tell vårn;",
+    "som ikkje holdt kjæft længe om gangen;",
+    "som ikkje akkurat va bevandra i finsnakking;",
+    "som ikkje va kjent førr å snakk me finbokstava;",
+    "som lætt vart mainnbisk;",
+    "som ikkje hold kjæften sin unødig længe;",
+    "som ikkje lot teng vær usagt;",
+    "som ikkje brukt å breinn inne me teng det vart fundert på;",
+    "som aldri va spesielt diplomatisk i kjæften;",
+    "som ikkje va smålåten blandt kjentfolk;",
+    "som ikkje brukt å fær varsomt fram me kjæftbruken;",
+    "som ikkje brukt å la teng gå ukommentert;",
+    "som vanligvis ikkje hadd tunga gåanes og driv dank i nerkjæften;",
+    "som ikkje brukt å spar på storbokstavan;",
+    "som ikkje længer hørt så godt;",
+    "som va så glad i Playstation 4;",
+    "som drakk rusbrus rætt fra flasktuten;",
+    "som hadde minst 70 i feber;",
+    "som gjerne undocka laptoppen i godt lag;",
+    "som hadde god tru på at den neste megademoen snart va ferdig;",
+    "som hadde så mange ølsorta i skapet;",
+    "som nettopp hadde stokke av med siste kaffikoppen uten å sett på ny;",
+    "som ofte førrveksla Dungeons med Rolemaster;",
+    "som sølte kaffe i hytt og jevær;",
+    "som gjerne stanka ut dametoalettet;",
+    "som hadde fem betinga heimbrentsdomma;",
+    "som sleit med flatulens på fritia;"
+    );
+
+// Punchline #1
+var t = new Array(
+    "- ja, no e det like før",
+    "- nei, det ekje kvær dag",
+    "- ja, no ska dokk sjå",
+    "- ja, no ska dokk pinadø sjå",
+    "- det e længe mella kvær gang");
+
+// Karakter i punchline
+var u = new Array(
+    "disponænten på Shell",
+    "sjæfen på Arnfinn",
+    "journalist-sjæfen",
+    "kassadama på Videoverden",
+	"vaskedama på Candy",
+    "lutfesksjefen",
+	"bartendern på Boccaccio",
+	"dørvakta på Castello",
+    "trusestrykarn");
+
+// Punchline #2
+var w = new Array(
+    "skræm unga på præstefrua!",
+    "hæng gardina i fjøsvindue!",
+    "begjynn å kok fesken ætter gammelmetoden!",
+    "dræg kvota i finstasen!",
+    "lægg gammelnota på naustlofte!",
+    "gjøm trygda i saufjøse!",
+    "går på tryne i kuruka!",
+    "kjøp kokfesk på samvirkelage!",
+    "må nykonførrmer sæ!",
+    "kjør sjarken i kaia!",
+    "reingjør saufjøsen!",
+    "utvid nauste!",
+    "røsk strækka av pængboka!",
+    "lægg sjyvottan punj haue!",
+    "fjærn mosen fra taksteinan!",
+    "strør grovsalt utførr Videoverden!",
+    "hjølp gammaljomfrua på Sund me klesvasken",
+    "tørk sæ ruindt kjæften me kopptua!",
+    "får trødd luft i baillan!",
+    "må debugge demo-koden!",
+	"får på sæ pesslæstan!",
+    "må leie film hos han Arfinn!");
+
+var x = new Array(
+    "sjøl");
+
+// Bannskap #1
+var ad = new Array(
+    "åreførrkalka",
+    "nesnya",
+    "grovsalta",
+    "nærsynte",
+    "utjåla",
+    "heimfødde",
+    "snøvlate",
+    "oppstanasige",
+    "omkaillfaltrerte",
+    "vrangsøvde",
+    "kullørte",
+    "førrnikla",
+    "utsarva");
+
+// Prefix bannskap #2
+var v = new Array(
+    "kommel",
+    "slog",
+    "sjett",
+    "pess",
+    "kleptoman",
+    "tarm",
+    "saup",
+    "svemmel",
+    "gorr",
+    "fjått",
+    "sveitt",
+    "bon",
+    "tåp",
+    "vengel",
+    "maijnnskjit",
+    "bleie",
+    "snørr",
+    "knøvvel");
+
+// Suffix bannskap #2
+var y = new Array(
+    "staur",
+    "åme",
+    "peis",
+    "slask",
+    "skoillt",
+    "baill",
+    "jesus",
+    "hysa",
+    "skoilt",
+    "kjæft",
+    "støvvel",
+    "skank",
+    "jokk",
+    "nase",
+    "lugg",
+    "nerd",
+    "skjit",
+    "læst",
+    "pong",
+    "fjøs",
+    "oter");
+
+var z = new Array(
+    "førskrækka",
+    "i førbainnels",
+    "og høtta me næven",
+    "og velta glasse me pulverkaffe i førrfjamsels",
+    "og resta oppgjett på haue",
+    "og spøtta skråtobakk i feskkassen",
+    "som hadd glømt brillan heime",
+    "som brukt å ha sine pærioda me religiøs ækstase",
+    "me andakt i stæmmen",
+    "og tok sæ te skrettet",
+    "og klappa i nævvan",
+    "me honningstemmen",
+    "og slapp en smygar",
+    "og tok på sæ brillan",
+    "og la på sprang",
+    "og klaska sæ på låran",
+    "og slapp en brakar",
+	"og pella sæ i skrettet",
+    "og blotta boksræva i forfjammels");
+
+var aa = new Array(
+    "nykoka",
+    "lættsalta",
+    "bedærva",
+    "ruindstekt",
+    "gammelsalta",
+    "oppværma",
+    "oppskjært",
+    "secunda",
+    "størkna",
+    "skjæmt",
+    "suindkoka",
+    "sprengt");
+
+var ab = new Array(
+    "jultrefæst",
+    "ei testellning",
+    "40-års lag",
+    "fæstlig lag",
+    "sankthansfeiring",
+    "konfermasjon",
+    "bryllup",
+    "lutfesklag",
+    "kopifæst",
+    "julebord",
+	"rollespælling",
+	"LAN-party");
+
+var ac = new Array(
+    "du ekje akkurat nå feskkokar du sjøl heller!",
+    "skriv du talan dine sjøl?",
+    "sku tru du aldri hadd ete ilag me storfræmmed før!",
+    "det e ikkje kvær dag du åpne kjæften din heller!",
+    "no prate du jusså præsten!",
+    "du ska no ha så mange slags takk sjøl!",
+    "no har du plassert ræva i sausfate igjæn!",
+    "no har du fått præstfrua i skrikinga!",
+    "du har no alltid vøre rang i matveien!",
+    "vær vænnlig å hoill kjæft attme matborde!",
+    "ska æ dor dæ en kilevink over nastuten?");
+
+var ae = new Array(
+    "sto førr beværtninga",
+    "sto førr traktemange",
+    "hadd laga te mat",
+    "sto førr maten",
+    "hadd koka meddag",
+    "smurte brødskiven");
+
+var af = new Array(
+    "ein utstoppa oter",
+    "et auskar",
+    "ei bænsinkainna",
+    "ei flaska kjøpsprit",
+    "ein toillkniv",
+    "et trækkspæll",
+    "en Guitar Hero-gitar",
+    "uindbroka",
+    "ei hauput",
+    "søndagsbroka",
+    "ei hallbløgga storkveita",
+    "et tastatur",
+    "en Commdore 64",
+	"en Amiga",
+    "en bærbar",
+    "en iPhone",
+    "en kaffi måkka");
+
+var ag = new Array(
+    "så kjæm storkaran jusså floga på hæstskjiten",
+    "så bi man kjenning allihop",
+    "så ska ainnakvær sprættskjit vis fræm boksræva",
+    "så e det ikkje framkomman langsme grusveien",
+    "så e dæm snar å få på sæ topphuva",
+    "så sett gammelpængan laust i brøstlomma",
+    "så slit dæm sæ laus fra kjærringræva",
+    "så e dæm snar i pesshæstan");
+
+var ah = new Array(
+    "lukta",
+    "e",
+    "spanderes",
+    "fallbys",
+    "kokes",
+    "dræges tell me",
+    "auksjoneres",
+    "frestes me");
+
+var ai = new Array(
+    "Kjære førrsamling",
+    "Kjære aillesammen",
+    "Mine damer og herrer, og øvrigheita forøvrig",
+    "Ehh.. kjære fræmmøtte",
+    "Kjære aillihopen",
+    "Hælvetes folk",
+    "Idiota",
+    "Peislæsta",
+    "Dåkker råtne epla",
+    "Baillhæsta");
+
+var aj = new Array(
+    "Og takk førr det.",
+    "Og det e æ pærsonli takknæmlig førr.",
+    "Og det e vi alle gla førr.",
+    "Og æ pærsonli kjent ikkje usmak på nokka.",
+    "Så ikkje gløm å spis dokk sængliggan.");
+
+
+function vits() {
+   var msg = new Array();
+   //var msg = "";
+
+   blanding=rndnumber(3)
+
+if (blanding == 1) {
+    // original struktur
+    msg.push(RandomElement(a));
+    msg.push(" ");
+    msg.push(RandomElement(b));
+    msg.push(" ");
+    msg.push(RandomElement(c));
+    msg.push(" ");
+    msg.push(RandomElement(d));
+    msg.push(". ");
+    msg.push(RandomElement(e));
+    msg.push(" ");
+    msg.push(RandomElement(f));
+    msg.push(" og ");
+    msg.push(RandomElement(g));
+    msg.push(" ");
+    msg.push(RandomElement(h));
+    msg.push(". ");
+    msg.push(RandomElement(i));
+    msg.push(" ");
+    msg.push(RandomElement(j));
+    msg.push(" <br><br>Plutselig ");
+    msg.push(RandomElement(k));
+    msg.push(", og ");
+    msg.push(RandomElement(l));
+    msg.push(" ");
+    msg.push(RandomElement(m));
+    msg.push(". <b>'");
+    msg.push(RandomElement(n));
+    msg.push(".. ");
+    msg.push(RandomElement(o));
+    msg.push("'</i></b> utbraut ");
+    msg.push(RandomElement(b));
+    msg.push(" ");
+    msg.push(RandomElement(z));
+    msg.push(".<br><br>");
+    msg.push(RandomElement(p));
+    msg.push("<br><br>");
+    msg.push(RandomElement(q));
+    msg.push(" ");
+    msg.push(RandomElement(b));
+    msg.push(", ");
+    msg.push(RandomElement(s));
+    msg.push(" <b>'");
+    msg.push(RandomElement(t));
+    msg.push(" at ");
+    msg.push(RandomElement(x));
+    msg.push(" ");
+    msg.push(RandomElement(u));
+    msg.push(" ");
+    msg.push(RandomElement(w));
+    msg.push("'</b> ");
+  }
+
+
+if (blanding == 2) {
+    // ny
+    msg.push(RandomElement(a));
+    msg.push(" ");
+    msg.push(RandomElement(b));
+    msg.push(" ");
+    msg.push(RandomElement(c));
+    msg.push(" ");
+    msg.push(RandomElement(d));
+    msg.push(". ");
+    msg.push("Folk va samla tell ");
+    msg.push(RandomElement(ab));
+    msg.push(" i ");
+    msg.push(RandomElement(f));
+    msg.push(", og ");
+    msg.push(RandomElement(u));
+    msg.push(" ");
+    msg.push(RandomElement(ae));
+    msg.push(".<br><br> ");
+    msg.push(RandomElement(i));
+    msg.push(" helt tell han Jabba reist sæ opp, kræmta og ba om orde: <b>'");
+    msg.push(RandomElement(ai));
+    msg.push("! Det e ikkje kvær dag man får gaffel i sæ ");
+    msg.push(RandomElement(aa));
+    msg.push(" ");
+    msg.push(RandomElement(h));
+    msg.push(" ilag me ");
+    msg.push(RandomElement(u));
+    msg.push(". ");
+    msg.push(RandomElement(aj));
+    msg.push("' </i></b><br><br>");
+    msg.push(RandomElement(p));
+    msg.push(" <br><br>");
+    msg.push(RandomElement(q));
+    msg.push(" ");
+    msg.push(RandomElement(b));
+    msg.push(", ");
+    msg.push(RandomElement(s));
+    msg.push(" <b>'Jon Cato, din ");
+    msg.push(RandomElement(ad));
+    msg.push(" ");
+    msg.push(RandomElement(v));
+    msg.push("");
+    msg.push(RandomElement(y));
+    msg.push(", ");
+    msg.push(RandomElement(ac));
+    msg.push("'</i></b> ");
+    }
+
+if (blanding == 3) {
+    // ny
+    msg.push(" Det va ");
+    msg.push(RandomElement(ab));
+    msg.push(" ");
+    msg.push(RandomElement(d));
+    msg.push(". ");
+    msg.push(RandomElement(e));
+    msg.push(" ");
+    msg.push(RandomElement(f));
+    msg.push(" og åt ");
+    msg.push(RandomElement(aa));
+    msg.push(" ");
+    msg.push(RandomElement(h));
+    msg.push(". Plutselig fikk de øye på ");
+    msg.push(RandomElement(u));
+    msg.push(" som kom sprenganes me ");
+    msg.push(RandomElement(af));
+    msg.push(" i nævan.<br><br>");
+    msg.push("<b>'");
+    msg.push(RandomElement(n));
+    msg.push("..!'</b> kauka ");
+    msg.push(RandomElement(b));
+    msg.push(", <b>'-");
+    msg.push(RandomElement(o));
+    msg.push("' </b><br><br>");
+    msg.push(RandomElement(p));
+    msg.push(" <br><br>");
+    msg.push(RandomElement(q));
+    msg.push(" ");
+    msg.push(RandomElement(b));
+    msg.push(", ");
+    msg.push(RandomElement(s));
+    msg.push(" <b>'Der kan dokk sjå. Når det ");
+    msg.push(RandomElement(ah));
+    msg.push(" ");
+    msg.push(RandomElement(h));
+    msg.push(" i ");
+    msg.push(RandomElement(f));
+    msg.push(", ");
+    msg.push(RandomElement(ag));
+    msg.push("!'</b>");
+  }
+
+
+
+   return msg.join("");
+}
+
+// unhide-->
+
+</SCRIPT>
+
+<SCRIPT language=JavaScript><!--
+
+document.write ( vits() );
+
+
+// --></SCRIPT>
+</BODY></HTML>
